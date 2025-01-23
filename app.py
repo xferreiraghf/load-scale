@@ -1,6 +1,7 @@
-from flask import Flask, jsonify
 import os
 import subprocess
+from waitress import serve
+from flask import Flask, jsonify
 
 app = Flask(__name__)
 filename = 'C:/balanca/PesoBal.BAL'
@@ -23,4 +24,4 @@ def read_file():
         return jsonify({'error': 'Arquivo nao encontrado'})
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    serve(app, host='0.0.0.0', port=5000)

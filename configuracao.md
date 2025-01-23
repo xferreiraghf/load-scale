@@ -1,4 +1,4 @@
-# Passo a passo para configuração do ambiente e API da balança
+## Passo a passo para configuração do ambiente e API da balança
 
 ### 1. Verificar a instalação do Python
 Execute o comando para confirmar a versão instalada:
@@ -23,28 +23,28 @@ Na pasta da balança, crie um ambiente virtual:
 
 > env\Scripts\activate
 
-
+___
 
 ### 4. Instalar as bibliotecas necessárias
 
 Com o ambiente virtual ativado, instale as dependências:
 > pip install -r requirements.txt
 
-
+___
 
 ### 5. Adicionar o **nssm**
 
 Copie o nssm para a raiz do disco:
 > C:\
 
-
+___
 
 ### 6. Adicionar o **nginx**
 
 Copie o **nginx** para a raiz do disco:
 > C:\
 
-
+___
 
 ### 7. Configurar o **nginx**
 
@@ -53,7 +53,7 @@ Copie o **nginx** para a raiz do disco:
 
 - Substitua o arquivo **nginx.conf** pelo arquivo correto disponível no repositório.
 
-
+___
 
 ### 8. Criar o serviço com o **nssm**
 
@@ -72,21 +72,21 @@ Copie o **nginx** para a raiz do disco:
     - Arguments:
     > -m waitress --host=0.0.0.0 --port=5000 app:app
 
-
+___
 
 ### 9. Iniciar o serviço    
 
 Após configurar, inicie o serviço:
 > nssm start <nome-do-serviço>
 
-
+___
 
 ### 10. Validar o serviço
 
 - Abra o **services.msc** para confirmar que o serviço está ativo.
 - Caso encontre erros, verifique o log no Visualizador de Eventos.
 
-
+___
 
 ### 11. Testar a API
 
