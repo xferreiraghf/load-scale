@@ -5,7 +5,7 @@ Execute o comando para confirmar a versão instalada:
 
 > python --version
 
----
+___
 
 ### 2. Adicionar o arquivo **app.py**
 
@@ -13,13 +13,14 @@ Coloque o arquivo **app.py** na pasta da balança:
 
 > C:\balanca\load-scale
 
----
+___
 
 ### 3. Criar um ambiente virtual (env)
 
 Na pasta da balança, crie um ambiente virtual:
 
 > python -m venv env
+
 > env\Scripts\activate
 
 
@@ -65,11 +66,11 @@ Copie o **nginx** para a raiz do disco:
 - Na tela de configuração que será exibida, preencha os campos:
 
     - Path:
-    **C:\balanca\load-scale\env\Scripts\python.exe**
+    > C:\balanca\load-scale\env\Scripts\python.exe
     - Startup directory:
-    **C:\balanca\load-scale**
+    > C:\balanca\load-scale
     - Arguments:
-    **-m waitress --host=0.0.0.0 --port=5000 app:app**
+    > -m waitress --host=0.0.0.0 --port=5000 app:app
 
 
 
