@@ -82,15 +82,15 @@ Após configurar, inicie o serviço:
 
 10. Validar o serviço
 
-* Abra o **services.msc** para confirmar que o serviço está ativo.
-* Caso encontre erros, verifique o log no Visualizador de Eventos.
+- Abra o **services.msc** para confirmar que o serviço está ativo.
+- Caso encontre erros, verifique o log no Visualizador de Eventos.
 
 
 
 11. Testar a API
 
-* Realize uma requisição via Postman para validar se a API está funcionando corretamente.
-* Exemplo de requisição GET: 
+- Realize uma requisição via Postman para validar se a API está funcionando corretamente.
+- Exemplo de requisição GET: 
 **192.168.29.28:5000/load-scale**
 
 
