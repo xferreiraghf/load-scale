@@ -27,7 +27,7 @@ Na pasta da balança, crie um ambiente virtual:
 ### 4. Instalar as bibliotecas necessárias
 
 Com o ambiente virtual ativado, instale as dependências:
-**pip install -r requirements.txt**
+> pip install -r requirements.txt
 
 
 
@@ -41,14 +41,14 @@ Copie o nssm para a raiz do disco:
 ### 6. Adicionar o **nginx**
 
 Copie o **nginx** para a raiz do disco:
-C:\
+> C:\
 
 
 
 ### 7. Configurar o **nginx**
 
 - Acesse a pasta de configuração:
-**C:\nginx-1.26.2\conf**
+> C:\nginx-1.26.2\conf
 
 - Substitua o arquivo **nginx.conf** pelo arquivo correto disponível no repositório.
 
@@ -57,7 +57,7 @@ C:\
 ### 8. Criar o serviço com o **nssm**
 
 - Acesse o diretório do **nssm**:
-**C:\nssm-2.24\win64**
+> C:\nssm-2.24\win64
 
 - Crie o serviço executando:
 **nssm install <nome-do-serviço>**
@@ -76,7 +76,7 @@ C:\
 ### 9. Iniciar o serviço    
 
 Após configurar, inicie o serviço:
-**nssm start <nome-do-serviço>**
+> nssm start <nome-do-serviço>
 
 
 
@@ -91,6 +91,6 @@ Após configurar, inicie o serviço:
 
 - Realize uma requisição via Postman para validar se a API está funcionando corretamente.
 - Exemplo de requisição GET: 
-**192.168.29.28:5000/load-scale**
+> 192.168.29.28:5000/load-scale
 
 
