@@ -23,7 +23,33 @@ Na pasta da balança, crie um ambiente virtual:
 Com o ambiente virtual ativado, instale as dependências:
 **pip install -r requirements.txt**
 
-5. Adicionar o nssm
+5. Adicionar o **nssm**
 
 Copie o nssm para a raiz do disco:
-**C:\**
+# C:\
+
+6. Adicionar o **nginx**
+
+Copie o **nginx** para a raiz do disco:
+# C:\
+
+7. Configurar o **nginx**
+
+* Acesse a pasta de configuração:
+**C:\nginx-1.26.2\conf**
+
+* Substitua o arquivo **nginx.conf** pelo arquivo correto disponível no repositório.
+
+8. Criar o serviço com o **nssm**
+
+* Acesse o diretório do **nssm**:
+**C:\nssm-2.24\win64**
+
+* Crie o serviço executando:
+**nssm install <nome-do-serviço>**
+
+* Na tela de configuração que será exibida, preencha os campos:
+
+    * Path:
+    **C:\balanca\load-scale\env\Scripts\python.exe**
+
