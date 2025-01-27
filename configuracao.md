@@ -92,7 +92,7 @@ ___
 
 - Realize uma requisição via Postman para validar se a API está funcionando corretamente.
 - Exemplo de requisição GET: 
-> 192.168.29.28:5000/load-scale
+> 192.168.29.7:5000/load-scale
 
 ![image](https://github.com/user-attachments/assets/dd23bb8f-3fa9-47d7-8d91-b2f312985ddc)
 
